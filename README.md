@@ -4,6 +4,11 @@ LAB5
 ##Functionality
 1st programs functionality verified by Dr. Neeble on Friday, 18 April.
 
+##1st Program
+
+I followed the Lab 5 instructions and most of the lab was straigt forward. 
+Program worked as it suppost to. It counts from 0, 9, 8 a, b, c, d, f and back to 0 again. And stops at "0".
+
 ##Answer to prism questions
 #######1)   
             a.PCLd-high
