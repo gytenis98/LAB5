@@ -1,5 +1,9 @@
 LAB5
 ====
+
+##Functionality
+1st programs functionality verified by Dr. Neeble on Friday, 18 April.
+
 ##Answer to prism questions
 #######1)   
             a.PCLd-high
