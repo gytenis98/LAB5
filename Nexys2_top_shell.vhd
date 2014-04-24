@@ -45,6 +45,22 @@ architecture Behavioral of Nexys2_top_shell is
 		sseg : OUT std_logic_vector(7 downto 0)
 		);
 	END COMPONENT;
+COMPONENT PRISM
+	PORT(
+		Clock : IN std_logic;
+		Reset_L : IN std_logic;
+		Input_0 : IN std_logic_vector(3 downto 0);
+		Input_1 : IN std_logic_vector(3 downto 0);
+		Input_2 : IN std_logic_vector(3 downto 0);
+		Input_3 : IN std_logic_vector(3 downto 0);          
+		Control_Bus : OUT std_logic_vector(25 downto 0);
+		Output_0 : OUT std_logic_vector(3 downto 0);
+		Output_1 : OUT std_logic_vector(3 downto 0);
+		Output_2 : OUT std_logic_vector(3 downto 0);
+		Output_3 : OUT std_logic_vector(3 downto 0)
+		);
+	END COMPONENT;
+
 
 ---------------------------------------------------------------------------------------------
 --This component manages the logic for displaying values on the NEXYS 2 7-segment displays
@@ -93,7 +109,6 @@ signal ClockBus_sig : STD_LOGIC_VECTOR (26 downto 0);
 --------------------------------------------------------------------------------------
 
 
-
 --------------------------------------------------------------------------------------
 --Insert any required signal declarations below
 --------------------------------------------------------------------------------------
@@ -125,10 +140,10 @@ LED <= CLOCKBUS_SIG(26 DOWNTO 19);
 --		  Example: if you are not using 7-seg display #3 set nibble3 to "0000"
 --------------------------------------------------------------------------------------
 
-nibble0 <= 
-nibble1 <= 
-nibble2 <= 
-nibble3 <= 
+---nibble0 <= 
+---nibble1 <= 
+--nibble2 <= 
+---nibble3 <= 
 
 --This code converts a nibble to a value that can be displayed on 7-segment display #0
 	sseg0: nibble_to_sseg PORT MAP(
@@ -167,11 +182,26 @@ nibble3 <=
 		sel => SSEG_AN,
 		sseg => SSEG
 	);
+	Inst_PRISM: PRISM PORT MAP(
+		Clock => Clockbus_Sig(23),
+		Reset_L =>not btn(3),
+		---Control_Bus => ,
+		Input_0 =>switch(3 downto 0),
+		Input_1 =>switch(7 downto 4),
+		Input_2 =>"0000",
+		Input_3 =>"0000",
+		Output_0 => nibble3,
+		Output_1 => nibble2,
+		Output_2 => nibble1,
+		Output_3 => nibble0
+
+	);
 
 -----------------------------------------------------------------------------
 --Instantiate the design you with to implement below and start wiring it up!:
 -----------------------------------------------------------------------------
 
+	  
 
 end Behavioral;
 
