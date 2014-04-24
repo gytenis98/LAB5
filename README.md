@@ -7,7 +7,7 @@ LAB5
 ##1st Program
 
 I followed the Lab 5 instructions and most of the lab was straigt forward. 
-Program worked as it suppost to. It counts from "0", "9", "8", "a", "b", "c", "d", "f" and back to "0" again. And stops at "0".
+Program worked as it suppost to. It counts from "0", "9", "8", "a", "b", "c", "d", "f" and back to "0" again. And stops at "0". Counting happens only when the number is negative. If number is possitive, then program goes straight to "jump 0" and stops. 
 
 ##Answer to prism questions
 #######1)   
