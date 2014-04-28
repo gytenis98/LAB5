@@ -3,7 +3,7 @@ LAB5
 ##Functionality
 1st program functionality verified by Dr. Neeble on Friday, 18 April.
 
-2nd program functionality verified by Capt. Silva on Thursday 24 April.
+2nd program functionality on PRISM Simulator and on FPGA verified by Capt. Silva on Thursday 24 April. +2nd program on FPGA.
 
 ##1st Program
 
