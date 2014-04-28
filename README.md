@@ -3,12 +3,18 @@ LAB5
 ##Functionality
 1st program functionality verified by Dr. Neeble on Friday, 18 April.
 
-2nd program functionality on PRISM Simulator and on FPGA verified by Capt. Silva on Thursday 24 April. +2nd program on FPGA.
+2nd program functionality on PRISM Simulator and on FPGA verified by Capt. Silva on Thursday 24 April. 
+
 
 ##1st Program
 
 I followed the Lab 5 instructions and most of the lab was straigt forward. 
 Program worked as it suppost to. It counts from "0", "9", "8", "a", "b", "c", "d", "f" and back to "0" again. And stops at "0". Counting happens only when the number is negative. If number is possitive, then program goes straight to "jump 0" and stops. 
+
+![alt tag](http://s13.postimg.org/kmrmg8j6f/image.jpg)
+
+![alt tag](http://s29.postimg.org/zf1p7jdev/image.jpg)
+
 
 ##Answer to prism questions
 #######1)   
