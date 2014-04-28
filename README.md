@@ -28,6 +28,8 @@ Program worked as it suppost to. It counts from "0", "9", "8", "a", "b", "c", "d
 ![alt tag](http://s29.postimg.org/zf1p7jdev/image.jpg)
 
 #####135-145 ns - decode hiAddr
+#####145-155 ns - jmp execute
+#####155-165 ns - fetch
 
 
 ##Answer to prism questions
