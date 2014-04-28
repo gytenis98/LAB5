@@ -13,19 +13,21 @@ Program worked as it suppost to. It counts from "0", "9", "8", "a", "b", "c", "d
 
 ![alt tag](http://s13.postimg.org/kmrmg8j6f/image.jpg)
 
-35-45 ns - fetch
-45-55 ns - decode
-55-65 ns - immediate execute
-65-75 ns - fetch
-75-85 ns - decode
-85-95 ns - decode addr low
-95-105 ns - direct I/O execute
-105-115 ns - fetch
-115-125 ns - decode
-125-135 ns - decode LoAddr
-135-145 ns - decode hiAddr
+#####35-45 ns - fetch
+#####45-55 ns - decode
+#####55-65 ns - immediate execute
+#####65-75 ns - fetch
+#####75-85 ns - decode
+#####85-95 ns - decode addr low
+#####95-105 ns - direct I/O execute
+#####105-115 ns - fetch
+#####115-125 ns - decode
+#####125-135 ns - decode LoAddr
+
 
 ![alt tag](http://s29.postimg.org/zf1p7jdev/image.jpg)
+
+#####135-145 ns - decode hiAddr
 
 
 ##Answer to prism questions
